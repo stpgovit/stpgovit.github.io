@@ -1,0 +1,291 @@
+:root {
+    --bc-font-face: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bc-text-dark: #000;
+    --bc-border-color: rgba(0, 0, 0, .25);
+    --bc-border-size: 1px;
+    --bc-border-radius: 0;
+    --bc-color-control-background: #fff;
+    --bc-color-control-background-alt: #eee;
+    --bc-outline: 3px solid rgba(0,0,0,0.05);
+    --bc-color-placeholder: #757575;
+    --bc-gap: 10px;
+    --bc-color-default: #0366d6;
+    --bc-text-light: #fff;
+    --bc-color-warning: #ce352c;
+    --bc-color-success: #60a917;
+}
+
+.broadband_challenge * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border-width: var(--bc-border-size);
+    border-color: var(--bc-border-color);
+    font-family: var(--bc-font-face);
+    color: var(--bc-text-dark);
+}
+
+.broadband_challenge h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.broadband_challenge h4 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.broadband_challenge h6 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.broadband_challenge label {
+    font-weight: 600;
+}
+
+.broadband_challenge input, .broadband_challenge textarea {
+    width: 100%;
+    height: 34px;
+    padding: 0 0.75em;
+    font-size: 16px;
+    border-color: var(--bc-border-color);
+    color: var(--text-dark);
+    background-color: var(--bc-color-control-background);
+    border-radius: var(--bc-border-radius);
+}
+
+.broadband_challenge textarea {
+    resize: none;
+    height: 75px;
+}
+
+.broadband_challenge button {
+    height: 36px;
+    font-size: 14px;
+    padding: 0 12px;
+    border-style: solid;
+    border-color: var(--bc-border-color);
+    background: var(--bc-color-default);
+    color: var(--bc-text-light);
+    border-radius: var(--bc-border-radius);
+}
+
+.broadband_challenge button:hover {
+    background-color: color-mix(in srgb, var(--bc-color-default) 80%, black);
+    cursor: pointer;
+}
+
+.broadband_challenge button:focus {
+    outline: var(--outline);
+}
+
+.broadband_challenge button.outline {
+    background: transparent;
+    color: var(--bc-color-default);
+    border-color: var(--bc-color-default);
+}
+
+.broadband_challenge button.outline:hover {
+    background-color: color-mix(in srgb, var(--bc-color-default) 80%, black);
+    color: var(--bc-text-light);
+}
+
+.broadband_challenge input:focus {
+    outline: var(--bc-outline);
+}
+
+.broadband_challenge input::placeholder {
+    color: var(--bc-color-placeholder);
+    opacity: 1;
+}
+
+.broadband_challenge hr {
+    border-top: var(--bc-border-size) solid var(--bc-border-color);
+    border-bottom: none;
+    margin-bottom: 1em;
+}
+
+.broadband_challenge p {
+    margin-bottom: 2em;
+}
+
+.broadband_challenge .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.broadband_challenge .container .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    gap: var(--bc-gap);
+    margin-bottom: var(--bc-gap);
+}
+
+.broadband_challenge .container .row .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.broadband_challenge .top-margin {
+    margin-top: 1em;
+}
+
+.broadband_challenge a {
+    color: var(--bc-color-default);
+    text-decoration: none;;
+}
+
+.broadband_challenge .file-holder {
+    border: var(--bc-border-size) solid var(--bc-border-color);
+    border-radius: var(--bc-border-radius);
+    width: 100%;
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+.broadband_challenge .file-holder thead {
+    background-color: var(--bc-color-control-background-alt);
+    border-bottom: var(--bc-border-size) solid var(--bc-border-color);
+    line-height: 48px;
+    text-align: left;
+}
+
+.broadband_challenge .file-holder thead th {
+    padding-left: 12px;
+}
+
+.broadband_challenge .file-holder tbody {
+    line-height: 48px;
+}
+
+.broadband_challenge .file-holder tbody td {
+    padding-left: 12px;
+}
+
+.broadband_challenge .file-holder tfoot  {
+    background-color: var(--bc-color-control-background-alt);
+    border-top: var(--bc-border-size) solid var(--bc-border-color);
+    line-height: 48px;
+    text-align: center;
+}
+
+.broadband_challenge .hidden {
+    display: none;
+}
+
+.broadband_challenge button.delete {
+    background-color: transparent;
+    border: none;
+}
+
+.broadband_challenge button.delete:hover {
+    color: var(--bc-text-light);
+    background-color: var(--bc-color-warning);
+}
+
+.broadband_challenge button.delete:hover .delete {
+    fill: var(--bc-text-light);
+}
+
+.broadband_challenge button .delete {
+    fill: var(--bc-color-warning);
+}
+
+.broadband_challenge .text_success {
+    color: var(--bc-color-success);
+}
+
+.broadband_challenge .text_warning {
+    color: var(--bc-color-warning);
+}
+
+.broadband_challenge .invalid {
+    border-color: var(--bc-color-warning) !important;
+}
+
+.broadband_challenge .text_small {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.broadband_challenge .text_required {
+    display: none;
+}
+
+.broadband_challenge .invalid .text_required {
+    display: inline;
+}
+
+.broadband_challenge .results {
+    border: var(--bc-border-size) solid var(--bc-border-color);
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.broadband_challenge .results.success {
+    background-color: color-mix(in srgb, var(--bc-color-success) 20%, white);
+    color: var(--bc-color-success);
+}
+
+.broadband_challenge .results.fail {
+    background-color: color-mix(in srgb, var(--bc-color-warning) 20%, white);
+    color: var(--bc-color-warning);
+}
+
+.bc-spinner {
+    display: inline-block;
+width: 2rem;
+height: 2rem;
+vertical-align: text-bottom;
+border: 0.25em solid currentColor;
+border-right-color: transparent;
+border-radius: 50%;
+animation: bc-spin .75s linear infinite;
+}
+
+@keyframes bc-spin {
+    to { transform: rotate(360deg) }
+}
+
+.bc-spinner-small {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2em;
+}
+
+.broadband_challenge .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(255,255,255,.75);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.broadband_challenge .overlay.hidden {
+    /*display: none !important;*/
+    visibility: hidden;
+    transition: visibility 2s linear;
+}
+
+.broadband_challenge .text-color-light {
+    color: var(--bc-text-light);
+}
+
+.broadband_challenge button .bc-spinner {
+    margin-right: 8px;
+}
