@@ -289,3 +289,7 @@ animation: bc-spin .75s linear infinite;
 .broadband_challenge button .bc-spinner {
     margin-right: 8px;
 }
+
+.broadband_challenge #bc-file-holder {
+    width: 100% !important;
+}
