@@ -147,7 +147,7 @@
 .broadband_challenge .file-holder {
     border: var(--bc-border-size) solid var(--bc-border-color);
     border-radius: var(--bc-border-radius);
-    width: 100%;
+    width: 100% !important;
     border-spacing: 0;
     font-size: 14px;
 }
