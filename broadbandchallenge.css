@@ -290,6 +290,6 @@ animation: bc-spin .75s linear infinite;
     margin-right: 8px;
 }
 
-.broadband_challenge #bc-file-holder {
+.broadband_challenge #bc-file-holder, .broadband_challenge #bc-file-holder thead, .broadband_challenge #bc-file-holder tbody, .broadband_challenge #bc-file-holder tfoot  {
     width: 100% !important;
 }
